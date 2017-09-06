@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://106.15.196.17:3306/zero
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  redis:
+    host: 106.15.196.17
+    port: 6379
+    password: root
+    pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+    timeout: 0
+
+#ftp config
+ftp:
+  ip: 106.15.196.17
+  port: 21
+  user: ftpuser
+  password: jianguo1992
+  prefix: http://img.huyunyun.com/
+
+#MD5 salt
+salt: geelysdafaqj23ou89ZXcj@#$@#$#@KJdjklj;D../dSF.,
