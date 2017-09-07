@@ -27,6 +27,13 @@ public class UserController {
     @PostMapping(value = "/login")
     public ServerResponse login(@RequestBody User user) {
         log.info("【用户登录信息】user:{}", user);
-        return null;
+
+        return userService.login(user);
+    }
+
+    @PostMapping(value = "/register")
+    public ServerResponse register(@RequestBody User user) {
+        log.info("【用户注册信息】user:{}", user);
+        return userService.register(user);
     }
 }

@@ -14,13 +14,19 @@ public enum ResponseCode {
     ERROR(1, "ERROR"),
 
     /** 2 参数错误 */
-    ILLEGAL_ARGUMENT(2,"ILLEGAL_ARGUMENT"),
+    ILLEGAL_ARGUMENT(2,"参数错误"),
 
-    /** 3 账号错误 */
-    USERNAME_MISMATCHING(2,"账号不存在"),
+    /** 3 账号不存在 */
+    USERNAME_MISMATCHING(3,"账号不存在"),
 
-    /** 4 密码错误 */
-    PASSWORD_MISMATCHING(2,"密码错误"),
+    /** 4 账号不存在 */
+    USERNAME_EXIST(4,"账号已存在"),
+
+    /** 5 密码错误 */
+    PASSWORD_MISMATCHING(5,"密码错误"),
+
+    /** 6 email格式错误或者已存在 */
+    E_MISMATCHING(6,"email格式错误或者已存在"),
 
     /** 10 需要登录 */
     NEED_LOGIN(10, "NEED_LOGIN");
